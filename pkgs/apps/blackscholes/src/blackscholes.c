@@ -324,7 +324,7 @@ int main (int argc, char **argv)
 #ifdef PARSEC_VERSION
 #define __PARSEC_STRING(x) #x
 #define __PARSEC_XSTRING(x) __PARSEC_STRING(x)
-        printf("PARSEC Benchmark Suite Version "__PARSEC_XSTRING(PARSEC_VERSION)"\n");
+        printf("PARSEC Benchmark Suite Version " __PARSEC_XSTRING(PARSEC_VERSION)"\n");
 	fflush(NULL);
 #else
         printf("PARSEC Benchmark Suite\n");
@@ -413,7 +413,7 @@ int main (int argc, char **argv)
         otime[i]      = data[i].t;
     }
 
-    printf("Size of data: %d\n", numOptions * (sizeof(OptionData) + sizeof(int)));
+    printf("Size of data: %lu\n", numOptions * (sizeof(OptionData) + sizeof(int)));
 
 #ifdef ENABLE_PARSEC_HOOKS
     __parsec_roi_begin();
