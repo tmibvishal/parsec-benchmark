@@ -46,6 +46,7 @@ class ParticleFilterPthread: public ParticleFilter<T>, public threads::Threadabl
 	using ParticleFilter<T>:: mMinParticles;
 	using ParticleFilter<T>:: mBins;
 	using ParticleFilter<T>:: mRnd;
+	using ParticleFilter<T>:: AddGaussianNoise;
 	typedef typename ParticleFilter<T>::fpType fpType;
 	typedef typename ParticleFilter<T>::Vectorf Vectorf;
 

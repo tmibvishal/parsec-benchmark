@@ -28,7 +28,7 @@ fi
 # Compilers and preprocessors
 export CC="${TARGET_CROSS}clang-9"
 export CXX="${TARGET_CROSS}clang++-9"
-export CPP="${TARGET_CROSS}clang-9"
+export CPP="${TARGET_CROSS}cpp"
 export CXXCPP=""
 
 # GNU Binutils
