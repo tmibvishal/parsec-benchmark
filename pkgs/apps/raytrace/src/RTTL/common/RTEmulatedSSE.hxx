@@ -899,6 +899,7 @@ _INLINE static sse_i _mm_setr_epi64(sse_i64 a, sse_i64 b) {
     return result;
 }
 
+/* they aer built in functions. In clang it shows, static functions definition follows non static defination
 _INLINE static unsigned int _mm_getcsr() {
     //FIXME
     return 0;
@@ -908,6 +909,7 @@ _INLINE static void _mm_setcsr(unsigned int v) {
     //FIXME
     return;
 }
+*/
 
 /////////////////////////////////////////////////////////////////////////////
 

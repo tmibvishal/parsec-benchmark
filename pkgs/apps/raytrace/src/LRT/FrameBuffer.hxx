@@ -204,6 +204,7 @@ _INLINE void RGBAucharFrameBuffer::prefetchBlock(const int x0, const int y0,
       unsigned int *start = (unsigned int*)&fb_as_int32[y0*res.x+x0];
 #pragma unroll(8)
       //for (int y=0;y<8;y++,start+=res.x) _mm_prefetch((char*)start,_MM_HINT_NTA);
+      for (int y=0;y<8;y++,start+=res.x); // line added: error: pragma unroll(8) required for, while, dowhile loop
       return;
     }
 }
