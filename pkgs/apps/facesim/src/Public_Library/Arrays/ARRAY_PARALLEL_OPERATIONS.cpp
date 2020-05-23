@@ -2,6 +2,10 @@
 // Copyright 2005-2006, Andrew Selle, Eftychios Sifakis.
 // This file is part of PhysBAM whose distribution is governed by the license contained in the accompanying file PHYSBAM_COPYRIGHT.txt.
 //#####################################################################
+#include <string>
+#include <sstream>
+#include <iostream>
+#include <fstream>
 #include "../Arrays/ARRAY.h"
 #include "../Matrices_And_Vectors/VECTOR_2D.h"
 #include "ARRAY_PARALLEL_OPERATIONS.h"
@@ -550,4 +554,3 @@ template class ARRAY_PARALLEL_OPERATIONS<MATRIX_3X3<float>, float, VECTOR_3D<flo
 template class ARRAY_PARALLEL_OPERATIONS<SYMMETRIC_MATRIX_3X3<float>, float, VECTOR_3D<float> >;
 template class ARRAY_PARALLEL_OPERATIONS<MATRIX_3X3<double>, double, VECTOR_3D<double> >;
 template class ARRAY_PARALLEL_OPERATIONS<SYMMETRIC_MATRIX_3X3<double>, double, VECTOR_3D<double> >;
-
