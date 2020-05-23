@@ -115,18 +115,18 @@ x264 | H.264 video encoding (Project Website) | yes
 `[BUILDCONF]` can take following values
 Build Configuration | Description |
 ---------- | -------------------- |
-*New* | 
+*New* | |
 **clang** | Build parallel version of suite with clang |
 **clang-pattern** | Build parallel version of suite with clang with pattern initialization | 
 **clang-zeroing** | Build parallel version of suite with clang with zero initialization | 
-*Default* | 
-- **gcc** | Build parallel version of suite with gcc | 
-- **gcc-serial** | Build serial version of suite with gcc | 
-- **gcc-hooks** | Build parallel version of suite with PARSEC hooks enabled with gcc | 
-- **icc** | Build parallel version of suite with Intel compiler | 
-- **gcc-pthreads** | Build with pthreads parallelization (if supported) | 
-- **gcc-openmp** | Build with OpenMP parallelization (if supported) | 
-- **gcc-tbb** | Build with TBB parallelization (if supported) | 
+*Default* | |
+**gcc** | Build parallel version of suite with gcc | 
+**gcc-serial** | Build serial version of suite with gcc | 
+**gcc-hooks** | Build parallel version of suite with PARSEC hooks enabled with gcc | 
+**icc** | Build parallel version of suite with Intel compiler | 
+**gcc-pthreads** | Build with pthreads parallelization (if supported) | 
+**gcc-openmp** | Build with OpenMP parallelization (if supported) | 
+**gcc-tbb** | Build with TBB parallelization (if supported) | 
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
