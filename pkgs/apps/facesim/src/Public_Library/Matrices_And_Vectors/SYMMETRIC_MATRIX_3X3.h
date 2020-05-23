@@ -11,8 +11,8 @@
 #include "../Read_Write/READ_WRITE_FUNCTIONS.h"
 namespace PhysBAM
 {
-
-template<class T> class MATRIX_3X3;
+template class MATRIX_3X3<float>;
+template class MATRIX_3X3<double>;
 template<class T> class MATRIX_3X2;
 template<class T> class DIAGONAL_MATRIX_3X3;
 template<class T> class DIAGONAL_MATRIX_2X2;
@@ -283,7 +283,7 @@ public:
 	void Fast_Solve_Eigenproblem (DIAGONAL_MATRIX_3X3<T>& eigenvalues, MATRIX_3X3<T>& eigenvectors) const
 	{
 		DIAGONAL_MATRIX_3X3<double> eigenvalues_double;
-		MATRIX_3X3<double> eigenvectors_double;
+		PhysBAM::MATRIX_3X3<double> eigenvectors_double;
 		Fast_Solve_Eigenproblem_Double (eigenvalues_double, eigenvectors_double);
 		eigenvalues = eigenvalues_double;
 		eigenvectors = eigenvectors_double;
